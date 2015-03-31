@@ -6,9 +6,20 @@
 	<script>
         var mystring = "Hello world!";
         console.log(mystring);
+        alert('Head script says ' + mystring + ' *before* body is rendered.');
 	</script>
 </head>
 <body>
-   Hooray JavaScript!
+    <script>
+        var mystring = "Hello again world!";
+        console.log(mystring);
+        alert('Body script says ' + mystring + ' *before* heading is rendered.');
+    </script>
+    <h1>Hooray JavaScript!</h1>
+    <script>
+        var mystring = "Hello world for the last time!";
+        console.log(mystring);
+        alert('Body script says ' + mystring + ' *after* heading is rendered.');
+    </script>
 </body>
 </html>
